@@ -26,13 +26,13 @@ build-docs:
 	$(BUILD_CMD) src/DocsGenerator
 
 update-docs:
-	curl -L "https://github.com/SonarSource/sonar-dotnet/releases/download/$(SONAR_VERSION)/sonar-csharp-plugin-$(SONAR_VERSION).jar" \
-		-o sonar-csharp-plugin.jar
+	curl -L "https://github.com/SonarSource/sonar-dotnet/releases/download/$(SONAR_VERSION)/sonar-vbnet-plugin-$(SONAR_VERSION).jar" \
+		-o sonar-vbnet-plugin.jar
 	mkdir -p $(RESOURCE_FOLDER)
-	unzip sonar-csharp-plugin.jar -d '$(RESOURCE_FOLDER)/sonar-csharp-plugin'
-	cp $(RESOURCE_FOLDER)/sonar-csharp-plugin/org/sonar/plugins/csharp/rules.xml "$(RESOURCE_FOLDER)/sonar-csharp-rules.xml"
-	rm sonar-csharp-plugin.jar
-	rm -rf $(RESOURCE_FOLDER)/sonar-csharp-plugin/
+	unzip sonar-vbnet-plugin.jar -d '$(RESOURCE_FOLDER)/sonar-vbnet-plugin'
+	cp $(RESOURCE_FOLDER)/sonar-vbnet-plugin/org/sonar/plugins/vbnet/rules.xml "$(RESOURCE_FOLDER)/sonar-vbnet-rules.xml"
+	rm sonar-vbnet-plugin.jar
+	rm -rf $(RESOURCE_FOLDER)/sonar-vbnet-plugin/
 
 documentation: update-docs build-docs
 

@@ -2,7 +2,7 @@ using System.IO;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
 
-namespace CodacyCSharp.Analyzer.Runner
+namespace CodacyVisualBasic.Analyzer.Runner
 {
     public static class CompilationHelper
     {
@@ -15,7 +15,7 @@ namespace CodacyCSharp.Analyzer.Runner
             {
                 var file = new FileInfo(filePath);
                 var project = workspace.CurrentSolution
-                    .AddProject("srcassembly", "srcassembly.dll", LanguageNames.CSharp)
+                    .AddProject("srcassembly", "srcassembly.dll", LanguageNames.VisualBasic)
                     .AddMetadataReference(systemMetadataReference);
 
                 using (var fileStream = File.Open(file.FullName, FileMode.Open, FileAccess.Read))

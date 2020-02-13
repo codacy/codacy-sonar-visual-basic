@@ -1,7 +1,7 @@
 using System.Xml.Linq;
 using Codacy.Engine.Seed.Patterns;
 
-namespace CodacyCSharp.DocsGenerator.Helpers
+namespace CodacyVisualBasic.DocsGenerator.Helpers
 {
     public static class CategoryHelper
     {

@@ -2,7 +2,7 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net461</TargetFramework>
-        <RootNamespace>CodacyCSharp.DocsGenerator</RootNamespace>
+        <RootNamespace>CodacyVisualBasic.DocsGenerator</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
         <DotNetCliToolReference Include="dotnet-mono" Version="0.5.6" />

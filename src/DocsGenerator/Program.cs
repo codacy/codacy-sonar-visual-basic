@@ -5,12 +5,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
-using CodacyCSharp.DocsGenerator.Helpers;
+using CodacyVisualBasic.DocsGenerator.Helpers;
 using Codacy.Engine.Seed.Patterns;
 using Newtonsoft.Json;
 using ReverseMarkdown;
 
-namespace CodacyCSharp.DocsGenerator
+namespace CodacyVisualBasic.DocsGenerator
 {
     internal static class Program
     {
@@ -35,7 +35,7 @@ namespace CodacyCSharp.DocsGenerator
 
             var descriptions = new List<Description>();
 
-            var doc = XDocument.Load(@".res/sonar-csharp-rules.xml");
+            var doc = XDocument.Load(@".res/sonar-vbnet-rules.xml");
             foreach (var rule in doc.Root.Elements())
             {
                 var lvl = LevelHelper.ToLevel((rule.Element("severity") ?? new XElement("undefined")).Value);

@@ -6,8 +6,8 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using CodacyCSharp.Analyzer.Runner;
-using CodacyCSharp.Analyzer.Utilities;
+using CodacyVisualBasic.Analyzer.Runner;
+using CodacyVisualBasic.Analyzer.Utilities;
 using Codacy.Engine.Seed;
 using Codacy.Engine.Seed.Results;
 using Microsoft.CodeAnalysis;
@@ -15,11 +15,11 @@ using Microsoft.CodeAnalysis.Diagnostics;
 using SonarAnalyzer.Common;
 using SonarAnalyzer.Helpers;
 
-namespace CodacyCSharp.Analyzer
+namespace CodacyVisualBasic.Analyzer
 {
     public class CodeAnalyzer : Codacy.Engine.Seed.CodeAnalyzer, IDisposable
     {
-        private const string csharpExtension = ".cs";
+        private const string visualBasicExtension = ".vb";
         private const string defaultSonarConfiguration = "SonarLint.xml";
         private readonly string sonarConfigurationPath;
         private readonly ImmutableArray<DiagnosticAnalyzer> availableAnalyzers;
@@ -27,7 +27,7 @@ namespace CodacyCSharp.Analyzer
 
         private readonly string tmpSonarLintFolder;
 
-        public CodeAnalyzer() : base(csharpExtension)
+        public CodeAnalyzer() : base(visualBasicExtension)
         {
             sonarConfigurationPath = Path.Combine(DefaultSourceFolder, defaultSonarConfiguration);
             availableAnalyzers = ImmutableArray.Create(

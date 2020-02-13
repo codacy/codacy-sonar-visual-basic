@@ -1,4 +1,4 @@
-﻿namespace CodacyCSharp.Analyzer
+﻿namespace CodacyVisualBasic.Analyzer
 {
     internal static class Program
     {
