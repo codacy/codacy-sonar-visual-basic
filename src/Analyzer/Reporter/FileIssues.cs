@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CodacyCSharp.Analyzer.Reporter
+namespace CodacyVisualBasic.Analyzer.Reporter
 {
     public class FileIssues
     {

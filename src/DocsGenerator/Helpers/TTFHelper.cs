@@ -1,6 +1,6 @@
 using System;
 
-namespace CodacyCSharp.DocsGenerator.Helpers
+namespace CodacyVisualBasic.DocsGenerator.Helpers
 {
     public static class TTFHelper
     {

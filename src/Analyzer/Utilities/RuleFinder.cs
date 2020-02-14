@@ -7,9 +7,9 @@ using Microsoft.CodeAnalysis.Diagnostics;
 using SonarAnalyzer.Common;
 using SonarAnalyzer.Rules;
 using SonarAnalyzer.Rules.Common;
-using SonarAnalyzer.Rules.CSharp;
+using SonarAnalyzer.Rules.VisualBasic;
 
-namespace CodacyCSharp.Analyzer.Utilities
+namespace CodacyVisualBasic.Analyzer.Utilities
 {
     public class RuleFinder
     {
@@ -37,7 +37,7 @@ namespace CodacyCSharp.Analyzer.Utilities
         {
             return diagnosticAnalyzers
                 .Where(analyzerType => !IsParameterized(analyzerType))
-                .Where(type => GetTargetLanguages(type).IsAlso(AnalyzerLanguage.CSharp));
+                .Where(type => GetTargetLanguages(type).IsAlso(AnalyzerLanguage.VisualBasic));
         }
 
         public static bool IsParameterized(Type analyzerType)
@@ -49,7 +49,7 @@ namespace CodacyCSharp.Analyzer.Utilities
         public IEnumerable<Type> GetAnalyzerTypes()
         {
             return diagnosticAnalyzers
-                .Where(type => GetTargetLanguages(type).IsAlso(AnalyzerLanguage.CSharp));
+                .Where(type => GetTargetLanguages(type).IsAlso(AnalyzerLanguage.VisualBasic));
         }
 
         public static IEnumerable<Type> GetUtilityAnalyzerTypes()
@@ -57,7 +57,7 @@ namespace CodacyCSharp.Analyzer.Utilities
             return PackagedRuleAssemblies
                 .SelectMany(assembly => assembly.GetTypes())
                 .Where(t => !t.IsAbstract && t.IsSubclassOf(typeof(UtilityAnalyzerBase)))
-                .Where(type => GetTargetLanguages(type).IsAlso(AnalyzerLanguage.CSharp));
+                .Where(type => GetTargetLanguages(type).IsAlso(AnalyzerLanguage.VisualBasic));
         }
 
         public static AnalyzerLanguage GetTargetLanguages(Type analyzerType)
@@ -70,9 +70,9 @@ namespace CodacyCSharp.Analyzer.Utilities
 
             var language = AnalyzerLanguage.None;
             foreach (var lang in attribute.Languages)
-                if (lang == LanguageNames.CSharp)
+                if (lang == LanguageNames.VisualBasic)
                 {
-                    language = language.AddLanguage(AnalyzerLanguage.CSharp);
+                    language = language.AddLanguage(AnalyzerLanguage.VisualBasic);
                 }
 
             return language;

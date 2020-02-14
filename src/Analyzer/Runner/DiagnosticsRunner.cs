@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.VisualBasic;
 using Microsoft.CodeAnalysis.Diagnostics;
 using SonarAnalyzer.Common;
 
-namespace CodacyCSharp.Analyzer.Runner
+namespace CodacyVisualBasic.Analyzer.Runner
 {
     public class DiagnosticsRunner
     {
@@ -41,7 +41,7 @@ namespace CodacyCSharp.Analyzer.Runner
             }
 
             var compilationOptions =
-                (CompilationOptions) new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary);
+                (CompilationOptions) new VisualBasicCompilationOptions(OutputKind.DynamicallyLinkedLibrary);
             compilationOptions = compilationOptions.WithSpecificDiagnosticOptions(
                 diagnosticsAnalyzers.SelectMany(analyzer => analyzer.SupportedDiagnostics)
                     .Select(diagnostic =>

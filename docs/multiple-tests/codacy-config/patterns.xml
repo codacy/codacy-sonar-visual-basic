@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module name="root">
+    <module name="S101" />
+    <module name="S103">
+        <property name="maximumLineLength" value="24"/>
+    </module>
+    <module name="BeforeExecutionExclusionFileFilter">
+        <property name="fileNamePattern" value="SonarLint\.xml"/>
+    </module>
+</module>
