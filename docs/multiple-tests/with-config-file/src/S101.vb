@@ -1,0 +1,2 @@
+Class foo
+End Class
