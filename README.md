@@ -1,4 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ff929008ec754fe790738a9a15821f93)](https://www.codacy.com/app/Codacy/codacy-sonar-visual-basic?utm_source=github.com&utm_medium=referral&utm_content=codacy/codacy-sonar-visual-basic&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9c1decbe5aad4ce3989eab10eab08e5d)](https://www.codacy.com/gh/codacy/codacy-sonar-visual-basic?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codacy/codacy-sonar-visual-basic&amp;utm_campaign=Badge_Grade)
 [![Build Status](https://circleci.com/gh/codacy/codacy-sonar-visual-basic.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/codacy/codacy-sonar-visual-basic)
 
 # Codacy Sonar Visual Basic
