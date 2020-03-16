@@ -376,6 +376,11 @@
     "timeToFix": 20
   },
   {
+    "patternId": "S5659",
+    "title": "JWT should be signed and verified with strong cipher algorithms",
+    "timeToFix": 5
+  },
+  {
     "patternId": "S2354",
     "title": "Line continuations should not be used",
     "timeToFix": 2
