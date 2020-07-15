@@ -28,7 +28,7 @@ namespace CodacyVisualBasic.DocsGenerator
 
             var patternsFile = new CodacyPatterns
             {
-                Name = "Sonar Visual Basic",
+                Name = "sonarvb",
                 Version = string.Format("{0}.{1}", sonarVersion),
                 Patterns = new List<Pattern>()
             };
