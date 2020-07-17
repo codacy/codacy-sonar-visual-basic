@@ -281,7 +281,7 @@
   },
   {
     "patternId": "S3011",
-    "title": "Changing or bypassing accessibility is security-sensitive",
+    "title": "Reflection should not be used to increase accessibility of classes, methods, or fields",
     "timeToFix": 30
   },
   {
@@ -296,7 +296,7 @@
   },
   {
     "patternId": "S4790",
-    "title": "Hashing data is security-sensitive",
+    "title": "Using weak hashing algorithms is security-sensitive",
     "timeToFix": 5
   },
   {

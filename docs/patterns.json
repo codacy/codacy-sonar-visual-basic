@@ -1,6 +1,6 @@
 {
-  "name": "Sonar Visual Basic",
-  "version": "8.6",
+  "name": "sonarvb",
+  "version": "8.9",
   "patterns": [
     {
       "patternId": "S3923",
@@ -287,9 +287,8 @@
     },
     {
       "patternId": "S3011",
-      "category": "Security",
-      "subcategory": "Cryptography",
-      "level": "Error"
+      "category": "ErrorProne",
+      "level": "Warning"
     },
     {
       "patternId": "S4792",
@@ -301,7 +300,7 @@
       "patternId": "S4834",
       "category": "Security",
       "subcategory": "Auth",
-      "level": "Error"
+      "level": "Info"
     },
     {
       "patternId": "S4790",
