@@ -50,12 +50,14 @@ namespace CodacyVisualBasic.DocsGenerator
 
                 var category = CategoryHelper.ToCategory(rule, lvl);
 
+                var patternId = rule.Element("key").Value;
                 var pattern = new Pattern(
-                    rule.Element("key").Value,
+                    patternId,
                     lvl,
                     category,
                     SubcategoryHelper.ToSubcategory(rule, category),
-                    patternsParameters);
+                    patternsParameters,
+                    enabled: DefaultPatterns.Patterns.Contains(patternId));
 
                 var descriptionParameters = parameters.Any() ? parameters.Select(param => new DescriptionParameter
                 {

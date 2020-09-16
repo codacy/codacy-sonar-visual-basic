@@ -275,6 +275,11 @@
     "timeToFix": 60
   },
   {
+    "patternId": "S907",
+    "title": "\"GoTo\" statements should not be used",
+    "timeToFix": 10
+  },
+  {
     "patternId": "S1313",
     "title": "Using hardcoded IP addresses is security-sensitive",
     "timeToFix": 30
