@@ -1,52 +1,61 @@
 {
   "name": "sonarvb",
-  "version": "8.9",
+  "version": "8.13",
   "patterns": [
     {
       "patternId": "S3923",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S2355",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S1197",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S2429",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S1764",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S1940",
       "category": "ErrorProne",
-      "level": "Info"
+      "level": "Info",
+      "enabled": true
     },
     {
       "patternId": "S1125",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S2737",
       "category": "ErrorProne",
-      "level": "Info"
+      "level": "Info",
+      "enabled": true
     },
     {
       "patternId": "S4830",
       "category": "Security",
       "subcategory": "FileAccess",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S1451",
@@ -61,12 +70,14 @@
           "name": "isRegularExpression",
           "default": "false"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S3453",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S3776",
@@ -81,17 +92,20 @@
           "name": "propertyThreshold ",
           "default": "3"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S1134",
       "category": "Security",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S1135",
       "category": "Security",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S139",
@@ -102,118 +116,141 @@
           "name": "legalCommentPattern",
           "default": "^'\\s*\\S+\\s*$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S1862",
       "category": "UnusedCode",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S1871",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S4260",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S3869",
       "category": "Security",
-      "level": "Error"
+      "level": "Error",
+      "enabled": true
     },
     {
       "patternId": "S3903",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S3981",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S4277",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S2551",
       "category": "Performance",
-      "level": "Error"
+      "level": "Error",
+      "enabled": true
     },
     {
       "patternId": "S3358",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S4143",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S4142",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S1048",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S3860",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S3866",
       "category": "Performance",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S1186",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": true
     },
     {
       "patternId": "S108",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S5542",
       "category": "Security",
       "subcategory": "FileAccess",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S1147",
       "category": "Security",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S2344",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S2349",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S3693",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S3385",
       "category": "Complexity",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S1067",
@@ -224,12 +261,14 @@
           "name": "max",
           "default": "3"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2357",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S104",
@@ -240,17 +279,20 @@
           "name": "maximumFileLocThreshold",
           "default": "1000"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2345",
       "category": "ErrorProne",
-      "level": "Info"
+      "level": "Info",
+      "enabled": true
     },
     {
       "patternId": "S2346",
       "category": "CodeStyle",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S1541",
@@ -261,7 +303,8 @@
           "name": "maximumFunctionComplexityThreshold",
           "default": "10"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S134",
@@ -272,47 +315,61 @@
           "name": "maximumNestingLevel",
           "default": "3"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S3464",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
+    },
+    {
+      "patternId": "S907",
+      "category": "Complexity",
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S1313",
       "category": "Security",
       "subcategory": "Cryptography",
-      "level": "Info"
+      "level": "Info",
+      "enabled": true
     },
     {
       "patternId": "S3011",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S4792",
       "category": "Security",
       "subcategory": "Auth",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S4834",
       "category": "Security",
       "subcategory": "Auth",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S4790",
       "category": "Security",
       "subcategory": "FileAccess",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S4507",
       "category": "Security",
       "subcategory": "Cryptography",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S2068",
@@ -324,85 +381,100 @@
           "name": "credentialWords",
           "default": "password, passwd, pwd, passphrase"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S4787",
       "category": "Security",
       "subcategory": "FileAccess",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S2077",
       "category": "Security",
       "subcategory": "CommandInjection",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S5042",
       "category": "Security",
       "subcategory": "Auth",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S4818",
       "category": "Security",
       "subcategory": "Cryptography",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S4823",
       "category": "Security",
       "subcategory": "CommandInjection",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S2255",
       "category": "Security",
       "subcategory": "Cryptography",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S4784",
       "category": "Security",
       "subcategory": "CommandInjection",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S126",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S1066",
       "category": "CodeStyle",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S1145",
       "category": "Security",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S3927",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S2352",
       "category": "CodeStyle",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S5659",
       "category": "Security",
       "subcategory": "Cryptography",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S2354",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S103",
@@ -413,27 +485,32 @@
           "name": "maximumLineLength",
           "default": "200"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S4210",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S4136",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S1172",
       "category": "UnusedCode",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S4144",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S138",
@@ -444,17 +521,20 @@
           "name": "max",
           "default": "80"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S1659",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S2302",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S101",
@@ -465,7 +545,8 @@
           "name": "format",
           "default": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2343",
@@ -476,7 +557,8 @@
           "name": "format",
           "default": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2342",
@@ -491,7 +573,8 @@
           "name": "flagsAttributeFormat",
           "default": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?s$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2347",
@@ -502,7 +585,8 @@
           "name": "format",
           "default": "^(([a-z][a-z0-9]*)?([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?_)?([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2348",
@@ -513,7 +597,8 @@
           "name": "format",
           "default": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S1542",
@@ -524,12 +609,14 @@
           "name": "format",
           "default": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2353",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S114",
@@ -540,7 +627,8 @@
           "name": "format",
           "default": "^I([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S117",
@@ -551,7 +639,8 @@
           "name": "format",
           "default": "^[a-z][a-z0-9]*([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2304",
@@ -562,7 +651,8 @@
           "name": "format",
           "default": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?(\\.([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?)*$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S1654",
@@ -573,7 +663,8 @@
           "name": "format",
           "default": "^[a-z][a-z0-9]*([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2362",
@@ -584,7 +675,8 @@
           "name": "format",
           "default": "^(s_|_)?[a-z][a-z0-9]*([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2364",
@@ -595,7 +687,8 @@
           "name": "format",
           "default": "^(s_|_)?[a-z][a-z0-9]*([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2363",
@@ -606,7 +699,8 @@
           "name": "format",
           "default": "^(s_|_)?[a-z][a-z0-9]*([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2366",
@@ -617,7 +711,8 @@
           "name": "format",
           "default": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2367",
@@ -628,7 +723,8 @@
           "name": "format",
           "default": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2369",
@@ -639,7 +735,8 @@
           "name": "format",
           "default": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2370",
@@ -650,7 +747,8 @@
           "name": "format",
           "default": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2373",
@@ -661,152 +759,182 @@
           "name": "format",
           "default": "^T(([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?)?"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2358",
       "category": "CodeStyle",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S4586",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S2359",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S2360",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": true
     },
     {
       "patternId": "S3466",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S1226",
       "category": "ErrorProne",
-      "level": "Info"
+      "level": "Info",
+      "enabled": true
     },
     {
       "patternId": "S2234",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S4428",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S4275",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S2372",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S2365",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S2376",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S3926",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S2339",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": true
     },
     {
       "patternId": "S2368",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": true
     },
     {
       "patternId": "S3603",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S4829",
       "category": "Security",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S2951",
       "category": "UnusedCode",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S4201",
       "category": "UnusedCode",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S1110",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S2757",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S1656",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S3449",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": true
     },
     {
       "patternId": "S4159",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S2340",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S122",
       "category": "CodeStyle",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S1643",
       "category": "Performance",
-      "level": "Info"
+      "level": "Info",
+      "enabled": true
     },
     {
       "patternId": "S1645",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S1301",
       "category": "ErrorProne",
-      "level": "Info"
+      "level": "Info",
+      "enabled": true
     },
     {
       "patternId": "S1151",
@@ -817,32 +945,38 @@
           "name": "max",
           "default": "8"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S1821",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S131",
       "category": "Security",
-      "level": "Error"
+      "level": "Error",
+      "enabled": true
     },
     {
       "patternId": "S105",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S3889",
       "category": "Performance",
-      "level": "Error"
+      "level": "Error",
+      "enabled": true
     },
     {
       "patternId": "S112",
       "category": "Security",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S1479",
@@ -853,7 +987,8 @@
           "name": "maximum",
           "default": "30"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S107",
@@ -864,32 +999,38 @@
           "name": "max",
           "default": "7"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S2761",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     },
     {
       "patternId": "S1751",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": false
     },
     {
       "patternId": "S2374",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": false
     },
     {
       "patternId": "S1075",
       "category": "CodeStyle",
-      "level": "Info"
+      "level": "Info",
+      "enabled": false
     },
     {
       "patternId": "S2178",
       "category": "ErrorProne",
-      "level": "Error"
+      "level": "Error",
+      "enabled": true
     },
     {
       "patternId": "S2375",
@@ -900,17 +1041,20 @@
           "name": "minimumSeriesLength",
           "default": "6"
         }
-      ]
+      ],
+      "enabled": false
     },
     {
       "patternId": "S1481",
       "category": "UnusedCode",
-      "level": "Info"
+      "level": "Info",
+      "enabled": true
     },
     {
       "patternId": "S3598",
       "category": "ErrorProne",
-      "level": "Warning"
+      "level": "Warning",
+      "enabled": true
     }
   ]
 }
