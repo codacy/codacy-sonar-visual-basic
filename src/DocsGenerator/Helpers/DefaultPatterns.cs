@@ -45,4 +45,3 @@ namespace CodacyVisualBasic.DocsGenerator.Helpers
         };
     }
 }
-
