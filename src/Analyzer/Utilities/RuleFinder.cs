@@ -27,8 +27,7 @@ namespace CodacyVisualBasic.Analyzer.Utilities
         public static IEnumerable<Assembly> PackagedRuleAssemblies { get; } =
             new[]
             {
-                Assembly.Load(typeof(FlagsEnumZeroMember).Assembly.GetName()),
-                Assembly.Load(typeof(FlagsEnumZeroMemberBase).Assembly.GetName())
+                Assembly.Load(typeof(FlagsEnumZeroMember).Assembly.GetName())
             };
 
         public IEnumerable<Type> AllAnalyzerTypes => diagnosticAnalyzers;
