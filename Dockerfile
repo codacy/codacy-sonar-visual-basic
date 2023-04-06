@@ -16,7 +16,7 @@ RUN make &&\
     make documentation &&\
     make publish
   
-FROM alpine:3.17
+FROM alpine:3.17.3
 
 COPY --from=builder /workdir/src/Analyzer/bin/Release/net461/publish/*.dll /opt/docker/bin/
 COPY --from=builder /workdir/src/Analyzer/bin/Release/net461/publish/*.exe /opt/docker/bin/
