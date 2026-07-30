@@ -3,13 +3,20 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.2 as builder
 COPY . /workdir
 WORKDIR /workdir
 
+# Debian stretch is EOL; its repos were moved to archive.debian.org, so the
+# default deb.debian.org/security.debian.org mirrors now 404.
+RUN sed -i \
+    -e 's|deb.debian.org/debian|archive.debian.org/debian|g' \
+    -e 's|security.debian.org|archive.debian.org|g' \
+    -e '/stretch-updates/d' \
+    /etc/apt/sources.list
 
-RUN apt-get update &&\
+RUN apt-get -o Acquire::Check-Valid-Until=false update &&\
     apt-get install -y apt-transport-https dirmngr gnupg ca-certificates
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&\
     echo "deb https://download.mono-project.com/repo/debian stable-stretch main" | tee /etc/apt/sources.list.d/mono-official-stable.list &&\
-    apt-get update &&\
+    apt-get -o Acquire::Check-Valid-Until=false update &&\
     apt-get install -y mono-complete build-essential nuget unzip libxml2-utils
 
 RUN make &&\
